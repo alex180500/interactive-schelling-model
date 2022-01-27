@@ -65,7 +65,7 @@ class Schelling:
 
 st.write("""
 # Interactive Schelling Model
-*by Alessandro Romancino*
+*by Alessandro Romancino* https://github.com/alex180500/schelling-model
 """)
 
 city_length = st.sidebar.slider('City Length', 10, 500, 100, 10)
