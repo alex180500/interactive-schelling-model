@@ -79,8 +79,6 @@ seed = st.sidebar.number_input('Seed', -10000, 10000, 1234)
 
 schelling = Schelling(city_length, empty_ratio, intolerance, n_ethnicities, seed)
 mean_ratio = schelling.similarity_ratio()
-print(f'{mean_ratio=}')
-
 
 plt.figure(figsize=(6, 9))
 plt.style.use('ggplot')
