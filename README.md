@@ -8,7 +8,7 @@ This repository is the base of a [**Streamlit**](https://streamlit.io) Python ap
 
 Special thanks to professor **Salvatore Miccichè** for the lesson on [Agent-Based Models](https://en.wikipedia.org/wiki/Agent-based_model).
 
-All of the code is distributed under the [MIT License](LICENSE.md) and is free to use for any purpose, please credit me if possible.
+All of the code is distributed under the [MIT License](LICENSE) and is free to use for any purpose, please credit me if possible if you want to use it.
 
 ## References
 
