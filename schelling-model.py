@@ -77,7 +77,8 @@ n_iterations = st.sidebar.number_input(
     'Number of Steps (Iterations)', 1, 1000, 20)
 seed = st.sidebar.number_input('Seed', -10000, 10000, 1234)
 
-schelling = Schelling(city_length, empty_ratio, intolerance, n_ethnicities, seed)
+schelling = Schelling(city_length, empty_ratio,
+                      intolerance, n_ethnicities, seed)
 mean_ratio = schelling.similarity_ratio()
 
 plt.figure(figsize=(6, 9))
@@ -113,9 +114,9 @@ if st.sidebar.button('Run Simulation'):
         plt.subplot2grid((3, 1), (0, 0), rowspan=2)
         plt.axis('off')
         plt.grid(False)
-        plt.pcolormesh(schelling.city, cmap=colormap, vmin=1,
-                    vmax=n_ethnicities)
-        
+        plt.pcolormesh(schelling.city, cmap=colormap,
+                       vmin=1, vmax=n_ethnicities)
+
         plt.subplot2grid((3, 1), (2, 0))
         plt.xlabel('Iterations')
         plt.xlim([0, n_iterations])
